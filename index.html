@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aditya Pandey — QA Engineer | Manual & Automation Testing | Playwright | SQL | Agile">
+<title>Aditya Pandey | QA Engineer</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1a2b;--panel2:#101f33;--text:#edf4ff;--muted:#a8b8cc;--line:#20334b;--accent:#62d7ff;--accent2:#8b7cff;--white:#fff;--shadow:0 20px 60px rgba(0,0,0,.25)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(98,215,255,.12),transparent 28%),radial-gradient(circle at 0% 30%,rgba(139,124,255,.10),transparent 25%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,17,31,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:1.2rem}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:24px;font-size:.9rem;color:var(--muted)}.nav-links a:hover{color:var(--white)}
+.menu{display:none;background:none;border:0;color:var(--white);font-size:1.5rem;cursor:pointer;padding:10px;line-height:1;touch-action:manipulation}
+.hero{min-height:100vh;display:grid;align-items:center;padding:120px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:14px 0 24px;letter-spacing:-.05em}
+.gradient{background:linear-gradient(90deg,var(--accent),#b6aaff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:1.08rem;color:var(--muted);max-width:680px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+.btn.primary{background:var(--white);color:#08111d;border-color:var(--white)}.btn.secondary:hover{border-color:var(--accent);color:var(--accent)}
+.profile-card{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.avatar{width:86px;height:86px;border-radius:20px;display:grid;place-items:center;font-family:Arial,Helvetica,sans-serif;font-size:2rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#06101c}
+.profile-card h3{font-size:1.45rem;margin:20px 0 2px}.profile-card .role{color:var(--accent)}
+.info{margin-top:24px;display:grid;gap:12px;color:var(--muted);font-size:.92rem}.info strong{color:var(--text)}
+section{padding:95px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}
+.eyebrow{color:var(--accent);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+h2{font-family:Arial,Helvetica,sans-serif;font-size:clamp(2rem,4vw,3.2rem);margin:7px 0 0;letter-spacing:-.04em}.section-head p{max-width:560px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:rgba(13,26,43,.78);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card p{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.stat b{display:block;font:700 2rem "Space Grotesk";color:var(--accent)}.stat span{color:var(--muted);font-size:.88rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:8px 12px;border-radius:999px;background:#102238;border:1px solid #24415d;color:#d9e8f7;font-size:.86rem}
+.timeline{border-left:1px solid var(--line);padding-left:28px}.timeline-item{position:relative;margin-bottom:35px}.timeline-item:before{content:"";position:absolute;left:-35px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.timeline h3,.project h3{margin:0;font-size:1.2rem}.meta{color:var(--accent);font-size:.9rem;margin:3px 0 13px}.timeline ul,.project ul{margin:0;padding-left:20px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:130px;height:130px;right:-70px;top:-70px;border-radius:50%;background:rgba(98,215,255,.08)}
+.project .number{font:700 3rem "Space Grotesk";color:rgba(255,255,255,.13)}
+.edu{display:grid;gap:14px}.edu-item{display:flex;justify-content:space-between;gap:20px;padding:20px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}.edu-item span{color:var(--muted);text-align:right}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.02))}.contact-list{display:grid;gap:15px;margin-top:20px}.contact-list a{color:var(--muted);word-break:break-word}.contact-list a:hover{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem}
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:20px;background:#081422;border-bottom:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu{display:block}.hero-grid,.about-grid,.projects,.contact{grid-template-columns:1fr}.hero{padding-top:110px}.profile-card{max-width:520px}.section-head{display:block}.section-head p{margin-top:15px}.edu-item{display:block}.edu-item span{display:block;text-align:left;margin-top:5px}.stats{grid-template-columns:1fr 1fr}}
+.check-list{list-style:none;padding-left:0}.check-list li:before{content:"✓";margin-right:8px}.project h4{margin:18px 0 8px;font-size:1rem}.project p{line-height:1.65}
+.article-feature{position:relative;overflow:hidden;background:linear-gradient(112deg,#071b4b 0%,#0a2862 58%,#20165c 100%);padding:145px 0 76px;min-height:480px}
+.article-feature:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 82% 42%,rgba(95,134,255,.24),transparent 38%);pointer-events:none}
+.article-feature-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
+.article-feature .eyebrow{color:#b7d5ff}.article-feature h1{font-size:clamp(2.35rem,4.6vw,4.2rem);line-height:1.06;letter-spacing:-.035em;margin:15px 0 18px;color:#fff}
+.article-feature p{color:#e0e9ff;max-width:540px;font-size:1.05rem}
+.article-feature .btn.primary{border-radius:5px;padding:14px 22px}.article-feature .btn.primary:hover{background:#dbeafe}
+.magazine-art{min-height:285px;position:relative;display:flex;align-items:center;justify-content:center;perspective:900px}
+.magazine-page{width:min(92%,510px);min-height:280px;background:#f7f5ed;color:#15213a;box-shadow:0 22px 45px rgba(0,0,0,.38);transform:rotate(-3deg);padding:25px 28px;display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;border:1px solid rgba(255,255,255,.7)}
+.magazine-cover{background:linear-gradient(155deg,#172b5b,#4367a6);color:#fff;padding:17px 13px;display:flex;flex-direction:column;justify-content:space-between;min-height:230px}
+.magazine-brand{font-size:.7rem;letter-spacing:.15em;font-weight:700}.magazine-monogram{font-size:3.8rem;line-height:1;font-weight:800;letter-spacing:-.1em}
+.magazine-cover small{font-size:.65rem;line-height:1.4}.magazine-copy{padding-top:4px}.magazine-copy .line{height:5px;background:#c9ccd2;margin:8px 0;border-radius:2px}.magazine-copy .line.short{width:64%}.magazine-copy h3{font-size:1.2rem;line-height:1.15;margin:0 0 12px}.magazine-copy p{font-size:.7rem;line-height:1.4;color:#626b7b;margin:0 0 9px}
+.article-full{background:var(--bg)}.article-full .article-content{max-width:850px;margin:auto}.article-full h2{font-size:clamp(1.3rem,2.3vw,1.7rem);letter-spacing:-.02em;margin:34px 0 10px}.article-full p{color:var(--muted);margin:0 0 15px}.article-full .article-opening{font-size:1.08rem;color:var(--text)}.article-full .closing{border-left:3px solid var(--accent);padding:18px 22px;background:rgba(98,215,255,.06);color:var(--text);margin-top:24px}
+@media(max-width:800px){.article-feature{padding:120px 0 55px}.article-feature-grid{grid-template-columns:1fr;gap:20px}.magazine-art{min-height:230px}.magazine-page{min-height:225px;padding:17px;gap:12px}.magazine-cover{min-height:190px}.magazine-monogram{font-size:3rem}.article-feature h1{font-size:clamp(2.4rem,10vw,3.5rem)}}
+
+/* Portfolio-only chatbot */
+.chatbot-section{padding:86px 0 96px;background:linear-gradient(135deg,rgba(98,215,255,.07),rgba(139,124,255,.09));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chatbot-intro{text-align:center;max-width:720px;margin:0 auto 28px}
+.chatbot-intro h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15;margin:10px 0 12px;letter-spacing:-.035em}
+.chatbot-intro p{color:var(--muted);margin:0}
+.chatbot-shell{max-width:820px;margin:0 auto;background:rgba(13,26,43,.88);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.chatbot-top{display:flex;align-items:center;gap:13px;padding:17px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.025)}
+.chatbot-orb{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;font-size:1.2rem;color:#07111f;background:linear-gradient(135deg,var(--accent),#b6aaff);flex-shrink:0}
+.chatbot-top strong{display:block}.chatbot-top small{color:var(--muted)}
+.chatbot-status{margin-left:auto;color:#7de0b0;font-size:.78rem;white-space:nowrap}
+.chatbot-messages{height:310px;overflow-y:auto;padding:22px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth}
+.chat-message{max-width:88%;padding:12px 15px;border-radius:15px;line-height:1.55;font-size:.94rem;overflow-wrap:anywhere;white-space:pre-wrap}
+.chat-message.bot{align-self:flex-start;background:#14253a;border:1px solid #263b55;color:var(--text);border-bottom-left-radius:5px}
+.chat-message.user{align-self:flex-end;background:linear-gradient(135deg,#62d7ff,#a9a0ff);color:#07111f;border-bottom-right-radius:5px;font-weight:600}
+.chat-suggestions{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 16px}
+.chat-suggestion{border:1px solid #2b405b;background:transparent;color:var(--muted);border-radius:999px;padding:8px 12px;font-size:.82rem;cursor:pointer}
+.chat-suggestion:hover,.chat-suggestion:focus-visible{border-color:var(--accent);color:var(--accent)}
+.chat-form{display:flex;gap:10px;padding:15px 17px;border-top:1px solid var(--line);background:rgba(255,255,255,.025)}
+.chat-form input{min-width:0;flex:1;background:#091625;border:1px solid #2b405b;border-radius:11px;padding:13px 15px;color:var(--text);font:inherit;outline:none}
+.chat-form input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(98,215,255,.12)}
+.chat-form button{border:0;border-radius:11px;padding:0 18px;background:var(--white);color:#07111f;font:inherit;font-weight:700;cursor:pointer}
+.chat-form button:hover{background:var(--accent)}
+.chatbot-note{max-width:820px;margin:12px auto 0;color:var(--muted);font-size:.78rem;text-align:center}
+.chatbot-note strong{color:var(--text)}
+@media(max-width:640px){.chatbot-section{padding:64px 0}.chatbot-messages{height:340px;padding:16px}.chat-message{max-width:96%}.chat-form{padding:12px}.chat-form button{padding:0 13px}.chatbot-status{font-size:.7rem}.chat-suggestions{padding:0 13px 14px}}
+
+</style>
+</head>
+<body>
+<nav><div class="container nav-inner">
+<a class="logo" href="#home">Aditya<span>.</span></a>
+<button type="button" class="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+<div class="nav-links">
+<a href="#article">Article</a><a href="#chatbot">AI Chatbot</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<main id="home">
+
+<section id="article" class="article-feature">
+<div class="container article-feature-grid">
+<div class="reveal">
+<div class="eyebrow">Featured Article · Personal Journey</div>
+<h1>My Journey: Learning, Growing, and Building My Future</h1>
+<p>A personal reflection on education, continuous learning, professional development, and the goals that guide my future.</p>
+<div class="buttons"><a class="btn primary" href="#full-article">Read the Article ↗</a></div>
+</div>
+<div class="magazine-art reveal" aria-label="Decorative magazine-style article preview">
+<div class="magazine-page">
+<div class="magazine-cover"><div class="magazine-brand">ADITYA PANDEY · JOURNAL</div><div class="magazine-monogram">AP.</div><small>LEARNING<br>GROWING<br>BUILDING MY FUTURE</small></div>
+<div class="magazine-copy"><h3>My Journey: Learning, Growing, and Building My Future</h3><p>A story of curiosity, personal growth, and the pursuit of meaningful work.</p><div class="line"></div><div class="line"></div><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="line"></div><div class="line short"></div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="full-article" class="article-full"><div class="container article-content">
+<div class="section-head reveal"><div><div class="eyebrow">Featured Article</div><h2>My Journey: Learning, Growing, and Building My Future</h2></div></div>
+<div class="reveal">
+<h2>Introduction</h2>
+<p class="article-opening">My name is Aditya Pandey, and my journey is shaped by learning, self-improvement, and the desire to build a meaningful career. I believe that success is not achieved in a single day but through consistent effort, practical experience, and the willingness to learn from every situation. As I continue to develop personally and professionally, I aim to build a future where I can use my knowledge, skills, and abilities to make a positive contribution.</p>
+<p>For me, life is a continuous learning process. Every new experience brings an opportunity to understand something better, improve my abilities, and discover new possibilities. This belief motivates me to keep moving forward, even when the path requires patience and hard work.</p>
+<h2>My Educational Background</h2>
+<p>I have an educational background in Computer Science and Engineering. My education introduced me to technical concepts, logical thinking, and the importance of solving problems in a structured way. It also helped me understand how technology can be used to improve processes and make everyday work more efficient.</p>
+<p>Over time, I realized that education is not limited to textbooks or examinations. It is also about developing discipline, building confidence, communicating effectively, and learning how to approach unfamiliar situations. I believe that combining academic knowledge with practical skills is essential for long-term professional growth.</p>
+<p>My educational journey has encouraged me to remain curious and open to learning. I want to continue strengthening my knowledge and applying it in practical situations that help me grow as a professional.</p>
+<h2>My Experiences and Professional Development</h2>
+<p>As I explore my professional path, I understand the importance of gaining practical experience and learning how workplaces operate. Professional experiences can teach valuable lessons about responsibility, communication, teamwork, time management, and adapting to different situations.</p>
+<p>I am interested in opportunities where I can apply my existing knowledge, develop new skills, and understand real-world work processes. I also recognize the importance of listening carefully, understanding requirements, and communicating clearly when working with other people.</p>
+<p>I believe that every role offers something valuable to learn. Whether it involves solving a problem, assisting someone, completing a task accurately, or collaborating with a team, each responsibility can contribute to professional development. My aim is to approach my work with sincerity, a positive attitude, and a willingness to improve.</p>
+<h2>My Skills, Strengths, and Values</h2>
+<p>I believe that a strong professional foundation comes from a combination of knowledge, practical abilities, and personal values. I aim to develop my problem-solving, communication, organizational, and digital skills while continuing to expand my technical understanding.</p>
+<p>I also value adaptability, attention to detail, teamwork, and accountability. These qualities help people approach their responsibilities thoughtfully and work effectively with others. I understand that no one knows everything, and I see asking questions, accepting feedback, and learning from mistakes as important parts of becoming better at what I do.</p>
+<p>One of the principles I try to follow is to focus on progress rather than perfection. Instead of expecting myself to know everything from the beginning, I believe in taking small steps, practising regularly, and learning through experience. This approach helps me remain motivated and open to new challenges.</p>
+<h2>My Personal Growth and Mindset</h2>
+<p>Personal growth is an important part of my journey. I have come to understand that building a career requires more than qualifications alone. It also requires patience, confidence, discipline, and the ability to handle challenges with a balanced mindset.</p>
+<p>I believe that challenges can help us recognize our strengths and identify areas where we need improvement. Mistakes, when understood and used as lessons, can become valuable opportunities for growth. This perspective encourages me to remain determined and keep working toward my goals.</p>
+<p>I also believe that consistency matters more than occasional effort. Developing a new skill, improving communication, or becoming more confident takes time and practice. By remaining committed to learning and maintaining a positive attitude, I hope to become more capable and prepared for future opportunities.</p>
+<h2>My Future Goals</h2>
+<p>Looking ahead, my goal is to build a stable and rewarding professional career where I can apply my knowledge, gain practical experience, and contribute to meaningful work. I want to continue developing both my technical and professional skills so that I can adapt to changing workplace requirements and take on greater responsibilities over time.</p>
+<p>I am particularly interested in opportunities that encourage learning, problem-solving, teamwork, and continuous improvement. I want to work in an environment where I can learn from experienced people, share ideas, and contribute through dedication and a responsible approach to my work.</p>
+<p>I also want to keep improving myself beyond the requirements of any single job. My long-term ambition is to become a confident, skilled, and dependable professional who can approach challenges thoughtfully and create value through consistent effort.</p>
+<h2>Conclusion</h2>
+<p>When I look at my journey so far, I see it as the beginning of a larger process of learning and development. My education has given me a foundation, and my continued efforts are helping me understand how to build upon it. I know that there is still much to learn, and I see that as an opportunity rather than a limitation.</p>
+<p>I want to share my professional interests, present my developing skills, and communicate the values that guide my work. I hope to reflect not only what I know today but also my commitment to learning what I need for tomorrow.</p>
+<p>My story is still being written. With patience, hard work, curiosity, and a willingness to improve, I aim to turn opportunities into experience, experience into knowledge, and knowledge into meaningful progress.</p>
+<p class="closing"><strong>I believe that a successful future is built one step at a time, through continuous learning, consistent effort, and the courage to keep moving forward.</strong></p>
+</div></div></section>
+
+
+<section id="chatbot" class="chatbot-section">
+  <div class="container">
+    <div class="chatbot-intro reveal">
+      <div class="eyebrow">Portfolio Assistant</div>
+      <h2>Have questions about my profile?<br><span class="gradient">Ask my portfolio assistant.</span></h2>
+      <p>Ask about my skills, QA experience, projects, education, or contact details. Answers are limited to information published on this portfolio.</p>
+    </div>
+    <div class="chatbot-shell reveal" aria-label="Portfolio question and answer assistant">
+      <div class="chatbot-top">
+        <div class="chatbot-orb" aria-hidden="true">✦</div>
+        <div><strong>Aditya's Portfolio Assistant</strong><small>Portfolio information only</small></div>
+        <div class="chatbot-status">● Ready to help</div>
+      </div>
+      <div class="chatbot-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions">
+        <div class="chat-message bot">Hi! I can help you explore Aditya's portfolio. Ask me about his skills, internship, projects, education, or contact details.</div>
+      </div>
+      <div class="chat-suggestions" aria-label="Suggested questions">
+        <button class="chat-suggestion" type="button">What are his key skills?</button>
+        <button class="chat-suggestion" type="button">Tell me about his experience</button>
+        <button class="chat-suggestion" type="button">Which projects has he tested?</button>
+        <button class="chat-suggestion" type="button">What is his education?</button>
+      </div>
+      <form class="chat-form" id="chatForm">
+        <input id="chatInput" type="text" autocomplete="off" maxlength="500" placeholder="Ask a question about this portfolio..." aria-label="Ask a portfolio question" required>
+        <button type="submit" aria-label="Send question">Ask ↗</button>
+      </form>
+    </div>
+    <p class="chatbot-note"><strong>Privacy-friendly:</strong> this version runs in your browser and does not send questions to an external AI service. It only responds using predefined portfolio information.</p>
+  </div>
+</section>
+
+<section class="hero"><div class="container hero-grid">
+<div class="reveal">
+<div class="kicker">QA Engineer · Noida, Uttar Pradesh</div>
+<h1>Testing software.<br><span class="gradient">Improving quality.</span></h1>
+<p>Detail-oriented QA Engineer with 6 months of internship experience in manual and automation testing across the full Software Testing Life Cycle (STLC).</p>
+<div class="buttons"><a class="btn primary" href="#projects">View My Work</a><a class="btn secondary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a></div>
+</div>
+<div class="profile-card reveal">
+<div class="avatar">AP</div><h3>Aditya Pandey</h3><div class="role">QA Engineer</div>
+<div class="info"><div>▸ Manual & Automation Testing</div><div>▸ Playwright · SQL · Jira</div><div>▸ Agile / Scrum</div><div>▸ AI-Assisted Automation</div><div>▸ 6 Months Internship Experience</div></div>
+</div>
+</div></section>
+
+<section id="about"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">01 / About</div><h2>Quality-focused by mindset.</h2></div><p>A practical QA profile built around test design, execution, defect tracking, automation, database validation, and real-user testing.</p></div>
+<div class="about-grid"><div class="card reveal"><p>Detail-oriented QA Engineer with hands-on experience in test case design, test execution, defect tracking, regression testing, and Agile/Scrum environments. Experienced with Playwright for automation, SQL for database validation, and AI-assisted automation to improve testing efficiency.</p><p>Strong understanding of SDLC, STLC, functional testing, and bug reporting, with a focus on identifying defects and supporting reliable, high-quality software.</p></div>
+<div class="stats reveal"><div class="stat"><b>6 Months</b><span>QA / Software Testing Internship</span></div><div class="stat"><b>STLC</b><span>Full testing life cycle exposure</span></div><div class="stat"><b>Playwright</b><span>Test automation</span></div><div class="stat"><b>SQL</b><span>Database validation</span></div></div></div>
+</div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">02 / Skills</div><h2>My testing toolkit.</h2></div></div>
+<div class="card reveal"><div class="skills">
+<span class="tag">Manual Testing</span><span class="tag">Automation Testing</span><span class="tag">Functional Testing</span><span class="tag">Regression Testing</span><span class="tag">Smoke Testing</span><span class="tag">Sanity Testing</span><span class="tag">Integration Testing</span><span class="tag">System Testing</span><span class="tag">UAT</span><span class="tag">Test Case Design</span><span class="tag">Test Scenario Creation</span><span class="tag">Test Execution</span><span class="tag">Test Planning</span><span class="tag">SDLC</span><span class="tag">STLC</span><span class="tag">Bug Life Cycle</span><span class="tag">Playwright</span><span class="tag">AI-Assisted Automation</span><span class="tag">Bug Reporting</span><span class="tag">Defect Tracking</span><span class="tag">Jira</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">Agile</span><span class="tag">Scrum</span>
+</div></div></div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">03 / Experience</div><h2>Professional experience.</h2></div></div>
+<div class="timeline reveal"><div class="timeline-item">
+<h3>QA / Software Testing Intern</h3><div class="meta">World Victory Power · 6 Months</div>
+<ul>
+<li>Designed, documented, and executed test cases and test scenarios for functional and regression testing.</li>
+<li>Performed manual testing across smoke, sanity, functional, and regression cycles.</li>
+<li>Identified, logged, and tracked defects through the complete bug life cycle using Jira.</li>
+<li>Built and executed automated test scripts using Playwright.</li>
+<li>Applied AI-assisted automation techniques to accelerate test case creation and improve testing efficiency.</li>
+<li>Executed SQL queries for data integrity and back-end database testing.</li>
+<li>Participated in sprint planning, daily stand-ups, and retrospectives in Agile/Scrum.</li>
+</ul></div></div>
+</div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">04 / Projects</div><h2>Practical QA work.</h2></div></div>
+<div class="projects">
+<article class="card project reveal"><div class="number">01</div><h3>Typesider — Practical QA Testing Assignment</h3><div class="meta">Sep 2026 · Practical QA Testing Project</div>
+<p><strong>🚀 Completed a Practical QA Testing Project – Typesider</strong></p>
+<p>I recently completed a practical QA Testing Assignment for Typesider, where I tested the application from both a Quality Assurance and real-user perspective.</p>
+<h4>🔍 Areas Tested</h4>
+<ul>
+<li>User onboarding &amp; overall user journey</li>
+<li>Streaks &amp; streak calendar</li>
+<li>Reward days &amp; eligibility</li>
+<li>Gift card rewards</li>
+<li>Reward cards &amp; partner brands</li>
+<li>Reward claim &amp; redemption flow</li>
+<li>Functional scenarios &amp; edge cases</li>
+</ul>
+<p>As part of the project, I performed exploratory and functional testing, identified potential issues, tested different user scenarios, reproduced issues, and documented findings in a structured manner.</p>
+<h4>💡 Key Skills Applied</h4>
+<ul class="check-list">
+<li>Manual Testing</li>
+<li>Functional Testing</li>
+<li>Exploratory Testing</li>
+<li>Test Scenario &amp; Test Case Design</li>
+<li>Edge Case Testing</li>
+<li>Bug Identification &amp; Reporting</li>
+<li>User Experience Testing</li>
+<li>Expected vs. Actual Result Analysis</li>
+</ul>
+<p>This project gave me valuable hands-on exposure to the "real-world QA testing process" and helped me strengthen my approach to finding, reproducing, and documenting application issues.</p>
+<p>I’m grateful to the Typesider team for providing this practical testing opportunity.</p>
+<p>I’m continuously improving my QA skills and looking forward to opportunities where I can contribute to "Software Testing / QA Engineering".</p>
+</article>
+<article class="card project reveal"><div class="number">02</div><h3>Library Management System — Manual Testing Project</h3><div class="meta">Python · MySQL · Jira · Manual Testing</div><ul><li>Developed a Library Management System using Python and MySQL.</li><li>Performed end-to-end manual testing of core modules.</li><li>Prepared and executed test cases for add book, issue book, return book, and search book.</li><li>Validated functionality, identified defects, and documented bug reports.</li></ul></article>
+</div></div></section>
+
+<section id="education"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">05 / Education</div><h2>Education.</h2></div></div>
+<div class="edu reveal">
+<div class="edu-item"><strong>Bachelor of Arts (B.A.)</strong><span>DDU University · 2026</span></div>
+<div class="edu-item"><strong>Diploma in Computer Science and Engineering</strong><span>Board of Technical Education · 2025</span></div>
+<div class="edu-item"><strong>Intermediate</strong><span>UP Board · 2022</span></div>
+<div class="edu-item"><strong>High School</strong><span>UP Board · 2020</span></div>
+</div></div></section>
+
+<section id="contact"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">06 / Contact</div><h2>Let's connect.</h2></div><p>Open to opportunities where I can contribute my QA skills and continue growing in software testing.</p></div>
+<div class="contact"><div class="contact-card reveal"><h3>Aditya Pandey</h3><p class="role">QA Engineer | Manual & Automation Testing | Playwright | SQL | Agile</p><div class="contact-list">
+<a href="mailto:adityapandey4882@gmail.com">✉ adityapandey4882@gmail.com</a>
+<a href="tel:+917007240252">☎ +91 7007240252</a>
+<span>⌖ Noida, Uttar Pradesh, India</span>
+</div></div>
+<div class="contact-card reveal"><h3>Professional Links</h3><div class="contact-list">
+<a href="https://linkedin.com/in/aditya-pandey-619a4b22a" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a href="https://github.com/Adit700" target="_blank" rel="noopener">GitHub ↗</a>
+<a href="resume.pdf" target="_blank" rel="noopener">Download Resume ↓</a>
+</div></div></div>
+</div></section>
+</main>
+<footer><div class="container">© <span id="year"></span> Aditya Pandey · QA Engineer Portfolio</div></footer>
+<script>
+(function () {
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  var revealItems = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, {threshold: 0.12});
+    revealItems.forEach(function(el) { obs.observe(el); });
+  } else {
+    revealItems.forEach(function(el) { el.classList.add("show"); });
+  }
+
+  var menu = document.querySelector(".menu");
+  var nav = document.querySelector(".nav-links");
+  if (menu && nav) {
+    menu.addEventListener("click", function(e) {
+      e.preventDefault();
+      var isOpen = nav.classList.toggle("open");
+      menu.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      menu.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      menu.textContent = isOpen ? "✕" : "☰";
+    });
+    nav.querySelectorAll("a").forEach(function(a) {
+      a.addEventListener("click", function() {
+        nav.classList.remove("open");
+        menu.setAttribute("aria-expanded", "false");
+        menu.setAttribute("aria-label", "Open navigation menu");
+        menu.textContent = "☰";
+      });
+    });
+
+  // Portfolio-only assistant: answers from the facts explicitly listed below.
+  var chatForm = document.getElementById("chatForm");
+  var chatInput = document.getElementById("chatInput");
+  var chatMessages = document.getElementById("chatMessages");
+  var portfolioAnswers = [
+    {keys:["skill","skills","technology","technologies","tool","tools","testing"], answer:"Aditya's listed QA skills include manual, automation, functional, regression, smoke, sanity, integration, system and UAT testing; test case design, scenario creation, test execution, test planning, SDLC/STLC, bug life cycle, Playwright, AI-assisted automation, bug reporting, defect tracking, Jira, SQL, MySQL, Python, Git, VS Code, Agile and Scrum."},
+    {keys:["experience","internship","work","company","worked","world victory","job"], answer:"Aditya's portfolio lists a 6-month QA / Software Testing internship at World Victory Power. His work included designing and executing functional and regression test cases, manual smoke/sanity testing, logging and tracking defects in Jira, writing Playwright automation scripts, using AI-assisted automation techniques, running SQL queries for database validation, and participating in Agile/Scrum ceremonies."},
+    {keys:["project","projects","typesider","reward","gift card"], answer:"The portfolio highlights the Typesider practical QA testing assignment. Aditya tested onboarding and the user journey, streaks and the streak calendar, reward-day eligibility, gift-card rewards, reward cards and partner brands, claim/redemption flows, and functional edge cases. He performed exploratory and functional testing and documented issues. The portfolio also lists a Library Management System manual testing project."},
+    {keys:["education","qualification","degree","college","university","diploma","study","studied"], answer:"The education section lists a Bachelor of Arts (B.A.) from DDU University (2026), a Diploma in Computer Science and Engineering from the Board of Technical Education (2025), Intermediate from UP Board (2022), and High School from UP Board (2020)."},
+    {keys:["about","introduction","introduce","who is aditya","profile","summary","tell me about"], answer:"Aditya Pandey is presented on this portfolio as a detail-oriented QA Engineer with 6 months of internship experience in manual and automation testing. His profile focuses on test case design, execution, defect tracking, regression testing, Playwright automation, SQL database validation, and Agile/Scrum."},
+    {keys:["contact","email","phone","number","reach","linkedin","github","location","address"], answer:"The portfolio lists Aditya's location as Noida, Uttar Pradesh, India. Email: adityapandey4882@gmail.com. Phone: +91 7007240252. Professional links are available in the Contact section of the portfolio."},
+    {keys:["resume","cv"], answer:"You can use the Download Resume link in the portfolio's introduction section or Contact section to view Aditya's resume."},
+    {keys:["strength","strengths","value","values","goal","goals","future","journey","article","growth","mindset"], answer:"In his article, Aditya emphasizes continuous learning, self-improvement, consistency, patience, teamwork, accountability, adaptability, attention to detail, and building a stable professional career through practical experience and ongoing skill development."},
+    {keys:["playwright","automation"], answer:"Aditya's portfolio says he built and executed automated test scripts using Playwright during his QA / Software Testing internship. Playwright and AI-assisted automation are also listed among his skills."},
+    {keys:["sql","mysql","database"], answer:"Aditya lists SQL and MySQL among his skills and describes using SQL queries for data integrity checks and back-end database testing during his QA internship."},
+    {keys:["jira","bug","defect"], answer:"Aditya lists Jira, bug reporting, defect tracking, and the bug life cycle among his skills. During his internship, he logged and tracked defects through the complete bug life cycle using Jira."}
+  ];
+  function addChatMessage(text, type) {
+    if (!chatMessages) return;
+    var message = document.createElement("div");
+    message.className = "chat-message " + type;
+    message.textContent = text;
+    chatMessages.appendChild(message);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+  function answerPortfolioQuestion(question) {
+    var q = question.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+    if (!q) return "Please enter a question about the information on this portfolio.";
+    var stop = ["what","who","when","where","which","tell","me","about","is","are","his","he","aditya","can","you","please","the","a","an","do","does","has","have","and","in","of","for","my","this","portfolio"];
+    var terms = q.split(" ").filter(function(w){return w.length > 2 && stop.indexOf(w) === -1;});
+    var best = null, bestScore = 0;
+    portfolioAnswers.forEach(function(item) {
+      var score = 0;
+      item.keys.forEach(function(key) {
+        if (q.indexOf(key) !== -1) score += key.indexOf(" ") >= 0 ? 3 : 2;
+        terms.forEach(function(term) { if (key === term || (term.length > 3 && key.indexOf(term) === 0)) score += 1; });
+      });
+      if (score > bestScore) { bestScore = score; best = item; }
+    });
+    if (best && bestScore >= 2) return best.answer;
+    return "I can only answer questions using information available in Aditya's portfolio. I couldn't find that detail here. Try asking about his QA skills, internship experience, projects, education, resume, or contact details.";
+  }
+  function sendPortfolioQuestion(question) {
+    var clean = question.trim();
+    if (!clean) return;
+    addChatMessage(clean, "user");
+    addChatMessage(answerPortfolioQuestion(clean), "bot");
+  }
+  if (chatForm && chatInput && chatMessages) {
+    chatForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      sendPortfolioQuestion(chatInput.value);
+      chatInput.value = "";
+      chatInput.focus();
+    });
+    document.querySelectorAll(".chat-suggestion").forEach(function(button) {
+      button.addEventListener("click", function() { sendPortfolioQuestion(button.textContent); });
+    });
+  }
+  }
+})();
+</script>
+</body>
+</html>
